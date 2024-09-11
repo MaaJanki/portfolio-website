@@ -12,6 +12,8 @@ import ReactLogo from '../img/React.png'
 import Flutter from '../img/Flutter.png'
 import Footer from './footer';
 import Resume from '../resume/Shiv_CV-Resume.pdf'
+import AVN from'../img/AV_Network.jpg'
+import TECH from'../img/Techinfo.jpg'
 const Home = () => {
     return (
         <div className='bg-myColor-navcolor'>
@@ -29,7 +31,8 @@ const Home = () => {
                     <div className='ml-16'>
                         <h1 className='md:text-[3rem] text-[1rem] font-serif font-extrabold text-blue-900 '> I'M Web Developer </h1>
                         <h1 className='md:text-[3rem] text-[1rem] font-serif font-extrabold text-blue-900 '>Shiv Raj Raut</h1>
-                        <p className='md:text-lg text-sm text-justify font-sans my-5 font-thin w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique accusantium nam illo ab pariatur excepturi molestias, quos recusandae nulla!</p>
+                        <p className='md:text-lg text-sm text-justify font-sans text-black my-5 font-thin w-[80%]'><span>Welcome to My Portfolio!</span><br />
+                        Hi, I'm shiv raj raut, a passionate Computer Engineering student and aspiring Software Developer. With a strong foundation in programming, problem-solving, and software design, I love creating innovative solutions that make life easier.</p>
                     </div>
                     <div><a href={Resume} type="submit" className='ml-16  bg-myColor-primary md:py-2 md:px-6 px-2 py-1 text-white rounded-md hover:bg-red-700'>DownloadCV</a></div>
 
@@ -84,20 +87,20 @@ const Home = () => {
             <section className='md:p-8 p-3 flex md:flex-row flex-col gap-10 justify-center md:mt-0 mt-12'>
                            {/* Card-1 */}
                 <div className='h-auto md:w-72 w-full  p-4 rounded-md text-center mb-4 border-2 border-gray-700'>
-                    <div className='pb-3'><img className='w-full md:h-40 h-24' src="" alt="" /></div>
+                    <div className='pb-3'><img className='w-full md:h-40 h-24' src={AVN} alt="" /></div>
                     <div>
-                        <h1 className='mb-4'>Av_Network</h1>
+                        <h1 className='mb-4 text-2xl uppercase font-bold'>Av_Network</h1>
                         <p className='md:text-xl text-sm'>A hotspot company provide local area network through EAP and routers by providing LAN or WLAN Network to the client.</p>
                         <button className='cursor-pointer mt-4  bg-myColor-primary py-2 px-6 text-white rounded-md hover:bg-red-700'>Preview</button>
                     </div>
                 </div>
  {/* Card-2 */}
                 <div className='h-auto md:w-72 w-full  p-4 rounded-md text-center mb-4 border-2 border-gray-700'>
-                    <div className='pb-3'><img className='w-full md:h-40 h-24' src="" alt="" /></div>
+                    <div className='pb-3'><img className='w-full md:h-40 h-24' src={TECH} alt="" /></div>
                     <div>
-                        <h1 className='mb-4'>Goverenment Pro</h1>
+                        <h1 className='mb-4 text-2xl uppercase font-bold'>Goverenment Pro</h1>
                         <p className='md:text-xl text-sm'>A Goverenment app which used to help all the person to fill there online form of nepal.</p>
-                        <button className='cursor-pointer mt-4  bg-myColor-primary py-2 px-6 text-white rounded-md hover:bg-red-700'>Preview</button>
+                        <button className='cursor-pointer mt-4  bg-myColor-primary py-2 px-6 text-white rounded-md hover:bg-red-700'>Download App</button>
                     </div>
                 </div>
                 

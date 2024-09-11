@@ -3,7 +3,7 @@ import Logo from '../img/logo.png'
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 text-white py-2">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between items-center">
           {/* Logo */}
@@ -54,8 +54,8 @@ const Footer = () => {
         </div>
         
         {/* Copyright */}
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <div className="mt-2 p-3 border-t border-gray-700 text-center">
+          <p>&copy; {new Date().getFullYear()} Shiv raj raut. All rights reserved.</p>
         </div>
       </div>
     </footer>

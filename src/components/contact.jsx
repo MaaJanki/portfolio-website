@@ -13,13 +13,26 @@ const Contact = () => {
   return (
     <div>
       <Nav />
-      <div className='w-full max-h-max flex flex-col gap-5'>
-        <div className='w-[80%] h-fit bg-gray-300 flex backdrop-blur-[10px] mx-auto rounded '>
+      <div className='w-full md:hidden block  h-auto mt-2'><img className='w-32 h-32 mx-auto rounded-full object-top  object-cover' src={Contactprofile} alt="" /></div>
+      <div className='sm:w-[100%] h-full  relative  md:hidden block'>
+            <div className='socialmedialinks w-full'>
+              <h2 className='text-black text-center mr-2 mt-2 font-bold'>Social Media Links</h2>
+              <div className='socialicon w-full justify-center  p-3 flex gap-6'>
+                <a href="https://github.com/shivraut24" className='w-10 h-10 bg-blue-400  rounded flex items-center justify-center transition-all hover:bg-black hover:text-white text-black' target="_blank"><GitHubIcon className='socialiconlist ' /></a>
+                <a href="https://www.linkedin.com/in/shiv-raut-73aa11254/" className='w-10 h-10 bg-blue-400 rounded flex items-center justify-center transition-all hover:bg-blue-900 hover:text-white text-blue-900' target="_blank"><LinkedInIcon className='socialiconlist' /></a>
+                <a href="https://wa.me/9779825823297?text=Welcome%20to%20Shiv%20Raj%20account" className='w-10 h-10 bg-blue-400  rounded flex items-center justify-center transition-all hover:text-white text-green-900' target="_blank"><WhatsAppIcon className='socialiconlist' /></a>
+                <a href="https://www.facebook.com/shiv.raja.9404" className='w-10 h-10 bg-blue-400  rounded flex items-center justify-center transition-all hover:bg-blue-900 hover:text-white text-blue-900' target="_blank"><FacebookIcon className='socialiconlist' /></a>
+              </div>
+            </div>
+          </div>
+
+      <div className='w-full max-h-max flex flex-col gap-5 mt-2'>
+        <div className='md:w-[80%] w-[95%] h-fit bg-gray-300 flex backdrop-blur-[10px] mx-auto rounded '>
           <div className='w-[65%] h-full flex  '>
-            <div className='w-[250px] h-[200px]'><img className='w-[100%] h-[100%] object-top  object-cover' src={Contactprofile} alt="" /></div>
+            <div className='w-[250px] md:block hidden h-[200px]'><img className='w-[100%] h-[100%] object-top  object-cover' src={Contactprofile} alt="" /></div>
             <div className='w-full h-full  flex'>
 
-              <div className='w-8 h-[200px] bg-blue-300 px-2 flex flex-col gap-4 pt-4 items-center text-blue-900'>
+              <div className='w-8 h-[200px] bg-blue-300 rounded-md px-2 flex flex-col gap-4 pt-4 items-center text-blue-900'>
                 <p> <EmailIcon /> </p>
                 <p><PhoneIcon /></p>
                 <p><LocationOnIcon /></p>
@@ -33,7 +46,8 @@ const Contact = () => {
 
             </div>
           </div>
-          <div className='w-[35%] h-full relative'>
+          
+          <div className='md:w-[35%] h-full relative md:block hidden'>
             <div className="designshape"></div>
             <div className='socialmedialinks  absolute z-10 w-full'>
               <h2 className='text-white text-right mr-2 mt-2 font-bold'>Social Media Links</h2>
@@ -48,8 +62,8 @@ const Contact = () => {
           </div>
 
         </div>
-        <div className='w-[80%] h-fit bg-gray-300 mb-8 flex backdrop-blur-[10px] mx-auto rounded '>
-          <div className='formcontainer w-1/2 '>
+        <div className='md:w-[80%] w-[95%] h-fit bg-gray-300 mb-8 flex backdrop-blur-[10px] mx-auto rounded '>
+          <div className='formcontainer md:w-1/2 w-full '>
             <form action="" className='w-full p-3 flex flex-col gap-2'>
               <h1 className='text-center text-2xl font-bold'>Leave Your Message Here!</h1>
               <div className="formgroup w-full">
@@ -77,7 +91,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className='contactinfo w-1/2 p-4  bg-red-100 rounded'>
+          <div className='contactinfo w-1/2 p-4  bg-red-100 rounded md:block hidden'>
           <h1 className='text-center text-2xl font-bold'>Info.</h1>
             <p className='mt-4 text-justify text-gray-600'>
               As a dedicated Computer Engineering professional, I bring a deep passion for technology and a robust skill set honed through years of experience in the industry. My expertise spans software development, systems architecture, and innovative problem-solving, enabling me to craft efficient and scalable solutions. Whether it's designing cutting-edge applications, optimizing complex systems, or exploring the latest advancements in technology, I am committed to delivering excellence in every project I undertake. Let's connect and collaborate on building the future of technology together

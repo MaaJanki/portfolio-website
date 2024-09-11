@@ -44,7 +44,7 @@ const Certification = () => {
   };
 
   return (
-    <div className='bg-gray-300 p-4 h-fit py-2'>
+    <div className='bg-gray-300 w-full p-4 h-fit py-2'>
       <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
         <DescriptionIcon className=" text-red-500 mr-2"/> Certification Details
       </h2>

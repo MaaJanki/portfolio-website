@@ -100,7 +100,7 @@ const Portfolio = () => {
       <Nav />
       <div className='h-screen w-[80%] mx-auto flex justify-between'>
         {/* Left sidebar */}
-        <aside className='h-screen w-[30%]'>
+        <aside className='md:h-screen md:w-[30%] md:block hidden'>
           <div className='fixed bg-black h-[100%] w-[250px]'>
             <div>
               <img src={Interview} alt="" className='h-52 w-[100%] object-cover object-top' />
@@ -139,7 +139,7 @@ const Portfolio = () => {
         </aside>
 
         {/* main home content */}
-        <aside className='h-screen w-[75%] py-8 flex flex-col gap-8 overflow-y-auto custom-scrollbar'>
+        <aside className='h-auto md:w-[75%] w-[100%] py-8 md:flex md:flex-col md:gap-8 md:overflow-y-auto custom-scrollbar'>
           <div id="home" ref={homeRef} className='bg-gray-300 h-auto w-full'>
             <div className='px-4 py-24'>
               <p className='text-red-500 text-2xl'>I'm</p>
