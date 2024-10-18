@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../img/logo.png';
 import HierMePopup from './HierMePopup';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Nav = () => {
   const MyNavigator = useNavigate();
@@ -44,17 +45,17 @@ const Nav = () => {
   const closeDrawer = () => {
     setIsDrawerOpen(false);
   };
-
+ 
   return (
     <div className='sticky top-0 z-50'>
-      <nav className='flex justify-between items-center Md:py-5 Md:px-4 p-2 md:red-500 md:bg-myColor-navcolor bg-slate-400'>
+      <nav className='flex justify-between items-center  md:py-5 h-14 px-6 md:px-6 md:bg-red-500  bg-gradient-to-l from-blue-600 to-purple-800'>
         <div className='flex items-center'>
-         <h1 className='nameplatenav'>Shiv Raj Raut</h1>
+         <h1 className='nameplatenav font-extrabold text-white '>Shiv Raj Raut</h1>
         </div>
-        <div className='md:hidden'>
-          <FaBars onClick={openDrawer} class="fa-solid fa-bars cursor-pointer bg-red-500 p-2 rounded text-white h-8 w-8" />
+        <div className='md:hidden  bg-red-500 rounded p-1.5'>
+          <MenuIcon onClick={openDrawer} className="cursor-pointer  text-xl  rounded text-white " />
         </div>
-        <div className='hidden md:flex gap-10 list-none text-black'>
+        <div className='hidden md:flex gap-10 list-none text-white'>
           <li onClick={handleHomeNavigate} className='cursor-pointer hover:text-red-500'>Home</li>
           <li onClick={handleAboutNavigate} className='cursor-pointer hover:text-red-500'>About</li>
           <li onClick={handlePortfolioNavigate} className='cursor-pointer hover:text-red-500'>Portfolio</li>
@@ -79,9 +80,9 @@ const Nav = () => {
       >
         <div className='flex justify-between items-center p-4 bg-myColor-navcolor'>
           <img src={Logo} alt="Logo" className='h-12 w-12 rounded-full' />
-          <FaTimes class="fa-solid fa-x  cursor-pointer text-red-600 h-8 w-8" onClick={closeDrawer}/>
+          <CloseIcon className="cursor-pointer text-red-600 h-8 w-8" onClick={closeDrawer} />
         </div>
-        <div className='flex flex-col p-4'>
+        <div className='flex flex-col p-4 text-black'>
           <li onClick={handleHomeNavigate} className='list-none cursor-pointer py-2 hover:text-red-500'>Home</li>
           <li onClick={handleAboutNavigate} className='list-none cursor-pointer py-2 hover:text-red-500'>About</li>
           <li onClick={handlePortfolioNavigate} className='list-none cursor-pointer py-2 hover:text-red-500'>Portfolio</li>

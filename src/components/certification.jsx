@@ -44,12 +44,12 @@ const Certification = () => {
   };
 
   return (
-    <div className='bg-gray-300 w-full p-4 h-fit py-2'>
+    <div className='bg-gray-300 w-full p-4 h-fit py-2 lg:mt-0 -mt-32'>
       <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
         <DescriptionIcon className=" text-red-500 mr-2"/> Certification Details
       </h2>
       <div>
-        <div className='ml-4'>
+        <div className='ml-4   text-black'>
           <ul>
             <li>Cisco Networking (11/2022 - 11/2022)</li>
             <li>Arch-A-Thon (03/2022)</li>
@@ -62,8 +62,8 @@ const Certification = () => {
           </ul>
         </div>
         <div className='py-4 flex justify-center flex-col items-center'>
-          <h2 className='py-4 font-extrabold'>Certificate Gallery</h2>
-          <div className='flex gap-4 font-bold bg-white rounded-md py-1 px-4'>
+          <h2 className='py-4 font-extrabold text-black text-xl '>Certificate Gallery</h2>
+          <div className='lg:w-full w-[350px]  lg:flex  flex flex-wrap gap-6 p-4    lg:gap-4 font-bold bg-white rounded-md lg:py-1 lg:px-4'>
             {['ALL', 'NETWORKING', 'HTML', 'CSS', 'JAVA', 'JAVASCRIPT', 'PYTHON'].map((filter) => (
               <button
                 key={filter}

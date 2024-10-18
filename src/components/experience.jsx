@@ -21,9 +21,9 @@ const Experience = () => {
 
   ];
   return (
-    <div className='bg-gray-300 p-4 '>
+    <div className='bg-gray-300 lg:p-4 '>
       <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
-      <StarIcon className="mr-2 text-red-500" />
+      <StarIcon className="lg:mr-2 mx-2 text-red-500" />
       Experience Details
       </h2>
       <div className="space-y-6">

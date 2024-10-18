@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio-project",
-  "homepage": "https://shivraut24.github.io/shiv-portfolio/",
+  "homepage": "https://MaaJanki.github.io/portfolio-website/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -19,6 +19,7 @@
     "@mui/material": "^6.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.26.1"
   },
   "devDependencies": {

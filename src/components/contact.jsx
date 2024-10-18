@@ -9,9 +9,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import Footer from './footer';
+import { Helmet } from 'react-helmet';
+
 const Contact = () => {
   return (
-    <div>
+    <div className='bg-white'>
+      <Helmet>
+      <title>Shiv_Raj - contact</title>
+    </Helmet>
       <Nav />
       <div className='w-full md:hidden block  h-auto mt-2'><img className='w-32 h-32 mx-auto rounded-full object-top  object-cover' src={Contactprofile} alt="" /></div>
       <div className='sm:w-[100%] h-full  relative  md:hidden block'>
@@ -38,7 +43,7 @@ const Contact = () => {
                 <p><LocationOnIcon /></p>
               </div>
 
-              <div className='w-full h-[200px] ml-2  flex flex-col gap-4 pt-4 '>
+              <div className='w-full h-[200px] ml-2  flex flex-col gap-4 pt-4 text-black'>
                 <p>shivrajraut74@gmail.com</p>
                 <p>+9779825823297</p>
                 <p>Laxminiya Gaupalika-7 Dhanusha <br /> province-02 Nepal</p>
@@ -64,7 +69,7 @@ const Contact = () => {
         </div>
         <div className='md:w-[80%] w-[95%] h-fit bg-gray-300 mb-8 flex backdrop-blur-[10px] mx-auto rounded '>
           <div className='formcontainer md:w-1/2 w-full '>
-            <form action="" className='w-full p-3 flex flex-col gap-2'>
+            <form action="" className='w-full p-3 flex flex-col gap-2 text-black'>
               <h1 className='text-center text-2xl font-bold'>Leave Your Message Here!</h1>
               <div className="formgroup w-full">
                 <label className="formlabel" for="name">Name</label><br />
@@ -83,7 +88,7 @@ const Contact = () => {
 
               <div className="formgroup">
                 <label className="formlabel" for="message">Message</label><br />
-                <textarea placeholder='leave your message.........' className="forminput w-full rounded focus:border-red-600 focus:border-[1px] py-1 px-4 outline-none" type="text" id="message" name="message" />
+                <textarea placeholder='leave your message.........' className="forminput w-full rounded focus:border-red-600 focus:border-[1px] bg-white py-1 px-4 outline-none" type="text" id="message" name="message" />
               </div>
 
               <div className="formgroup">

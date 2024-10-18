@@ -12,16 +12,21 @@ import ReactLogo from '../img/React.png'
 import Flutter from '../img/Flutter.png'
 import Footer from './footer';
 import Resume from '../resume/Shiv_CV-Resume.pdf'
-import AVN from'../img/AV_Network.jpg'
-import TECH from'../img/Techinfo.jpg'
+import AVN from '../img/AV_Network.jpg'
+import TECH from '../img/Techinfo.jpg'
+import { Helmet } from 'react-helmet';
+
 const Home = () => {
     return (
-        <div className='bg-myColor-navcolor'>
+        <div className='bg-red-50'>
+            <Helmet>
+                <title>Shiv_Raj - Portfolio</title>
+            </Helmet>
             <Nav />
             <div className=' h-screen md:w-[80%] sm:w-95%  mx-auto md:flex flex md:flex-row flex-col'>
                 <div className=' md:w-[60%] w-100% h-screen md:pt-24 pt-8' >
                     <div className='absolute mx-2 mt-2 '>
-                        <ul className='gap-4 flex flex-col'>
+                        <ul className='gap-4 flex flex-col text-black'>
                             <li className='cursor-pointer hover:text-blue-600'><FacebookIcon /></li>
                             <li className='cursor-pointer hover:text-blue-600'><LinkedInIcon /></li>
                             <li className='cursor-pointer hover:text-purple-600'><InstagramIcon /></li>
@@ -32,9 +37,9 @@ const Home = () => {
                         <h1 className='md:text-[3rem] text-[1rem] font-serif font-extrabold text-blue-900 '> I'M Web Developer </h1>
                         <h1 className='md:text-[3rem] text-[1rem] font-serif font-extrabold text-blue-900 '>Shiv Raj Raut</h1>
                         <p className='md:text-lg text-sm text-justify font-sans text-black my-5 font-thin w-[80%]'><span>Welcome to My Portfolio!</span><br />
-                        Hi, I'm shiv raj raut, a passionate Computer Engineering student and aspiring Software Developer. With a strong foundation in programming, problem-solving, and software design, I love creating innovative solutions that make life easier.</p>
+                            Hi, I'm shiv raj raut, a passionate Computer Engineering student and aspiring Software Developer. With a strong foundation in programming, problem-solving, and software design, I love creating innovative solutions that make life easier.</p>
                     </div>
-                    <div><a href={Resume} type="submit" className='ml-16  bg-myColor-primary md:py-2 md:px-6 px-2 py-1 text-white rounded-md hover:bg-red-700'>DownloadCV</a></div>
+                    <div><a href={Resume} type="submit" className='ml-16  bg-myColor-primary md:py-2 md:px-6 px-2 py-3 text-white rounded-md hover:bg-red-700'>DownloadCV</a></div>
 
                 </div>
                 <div className=' md:w-[40%] md:h-[90%] w-full  flex justify-center items-center'>
@@ -83,31 +88,33 @@ const Home = () => {
                 </div>
             </section>
             {/* My Projects  */}
-  
+
             <section className='md:p-8 p-3 flex md:flex-row flex-col gap-10 justify-center md:mt-0 mt-12'>
-                           {/* Card-1 */}
-                <div className='h-auto md:w-72 w-full  p-4 rounded-md text-center mb-4 border-2 border-gray-700'>
-                    <div className='pb-3'><img className='w-full md:h-40 h-24' src={AVN} alt="" /></div>
+                {/* Card-1 */}
+                <div className=' bg-blue-700 h-auto md:w-72 w-full relative  p-4 rounded-md text-center mb-4 border-2 border-gray-700'>
+                    <div className='pb-3'>
+                        <img className='w-full md:h-40 h-36 object-fit ' src={AVN} alt="" />
+                        </div>
                     <div>
-                        <h1 className='mb-4 text-2xl uppercase font-bold'>Av_Network</h1>
-                        <p className='md:text-xl text-sm'>A hotspot company provide local area network through EAP and routers by providing LAN or WLAN Network to the client.</p>
+                        <h1 className='mb-4 text-2xl uppercase font-extrabold text-black '>Av_Network</h1>
+                        <p className=' text-sm text-black'>A hotspot company provide local area network through EAP and routers by providing LAN or WLAN Network to the client.</p>
                         <button className='cursor-pointer mt-4  bg-myColor-primary py-2 px-6 text-white rounded-md hover:bg-red-700'>Preview</button>
                     </div>
                 </div>
- {/* Card-2 */}
-                <div className='h-auto md:w-72 w-full  p-4 rounded-md text-center mb-4 border-2 border-gray-700'>
-                    <div className='pb-3'><img className='w-full md:h-40 h-24' src={TECH} alt="" /></div>
+                {/* Card-2 */}
+                <div className='h-auto md:w-72 w-full  relative p-4 rounded-md text-center mb-4 border-2 text-black border-gray-700 bg-blue-700'>
+                    <div className='pb-3'><img className='w-full md:h-40 h-36 object-fit' src={TECH} alt="" /></div>
                     <div>
                         <h1 className='mb-4 text-2xl uppercase font-bold'>Goverenment Pro</h1>
                         <p className='md:text-xl text-sm'>A Goverenment app which used to help all the person to fill there online form of nepal.</p>
-                        <button className='cursor-pointer mt-4  bg-myColor-primary py-2 px-6 text-white rounded-md hover:bg-red-700'>Download App</button>
+                        <button className=' cursor-pointer mt-4  bg-myColor-primary py-2 px-6 text-white rounded-md hover:bg-red-700'>Download App</button>
                     </div>
                 </div>
-                
+
             </section>
 
-        
-           
+
+
 
 
 

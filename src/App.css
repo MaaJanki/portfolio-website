@@ -28,7 +28,6 @@ color: rgb(0, 0, 0);
 
 .nameplatenav{
   font-size: 20px;
-  font-weight: bold;
   text-transform: uppercase;
 
 }
@@ -37,22 +36,25 @@ color: rgb(0, 0, 0);
   }
   .nameplatenav::before{
     position: absolute;
-    left: 9px;
-    bottom: 15px;
+    left: 24px;
+    bottom: 12px;
     content: "";
     width: 70px;
     height: 2px;
     border-radius: 25px;
     background-color:rgb(255, 0, 0);
   }
-
+  input, textarea{
+    background-color: white;
+    color:black;
+  }
 
 
   @media only screen and (max-width: 768px) {
     .nameplatenav::before{
       position: absolute;
-      left: 9px;
-      bottom: 10px;
+      left: 24px;
+      bottom: 12px;
       content: "";
       width: 70px;
       height: 2px;

@@ -13,7 +13,7 @@ import Experience from './experience';
 import Skill from './skill';
 import Certification from './certification';
 import Resume from '../resume/Shiv_CV-Resume.pdf'
-
+import { Helmet } from 'react-helmet';
 
 
 
@@ -96,11 +96,14 @@ const Portfolio = () => {
   };
 
   return (
-    <div className='bg-myColor-navcolor'>
+    <div className=' bg-white h-auto w-full'>
+       <Helmet>
+      <title>Shiv_Raj - resume</title>
+    </Helmet>
       <Nav />
-      <div className='h-screen w-[80%] mx-auto flex justify-between'>
+      <div className=' lg:w-[80%]  lg:mx-auto flex justify-between'>
         {/* Left sidebar */}
-        <aside className='md:h-screen md:w-[30%] md:block hidden'>
+        <aside className='md:h-screen md:w-[30%]  md:block hidden'>
           <div className='fixed bg-black h-[100%] w-[250px]'>
             <div>
               <img src={Interview} alt="" className='h-52 w-[100%] object-cover object-top' />
@@ -139,8 +142,8 @@ const Portfolio = () => {
         </aside>
 
         {/* main home content */}
-        <aside className='h-auto md:w-[75%] w-[100%] py-8 md:flex md:flex-col md:gap-8 md:overflow-y-auto custom-scrollbar'>
-          <div id="home" ref={homeRef} className='bg-gray-300 h-auto w-full'>
+        <aside className='h-auto md:w-[75%] w-screen  lg:py-8 md:flex md:flex-col md:gap-8 md:overflow-y-auto custom-scrollbar'>
+          <div id="home" ref={homeRef} className='bg-gray-300 lg:h-auto lg:w-full   w-screen h-auto '>
             <div className='px-4 py-24'>
               <p className='text-red-500 text-2xl'>I'm</p>
               <h1 className='text-black text-4xl font-extrabold'>SHIV RAJ RAUT</h1>
@@ -151,28 +154,28 @@ const Portfolio = () => {
                 </p>
               </div>
             </div>
-            <div className='w-full flex justify-center items-center'>
+            <div className='lg:w-full mx-auto w-[95%] flex justify-center items-center'>
               <a href={Resume} className='bg-black hover:bg-gray-800 text-red-500 w-1/2 py-2 text-center text-xl flex justify-center items-center'>
                 <CloudDownloadIcon className="mr-2" /> Resume
               </a>
-              <button className='bg-red-500 hover:bg-red-600 text-black w-1/2 py-2 text-center text-xl flex justify-center items-center'>
+              <button className='bg-red-500 rounded-none hover:bg-red-600 text-black w-1/2 py-2 text-center text-xl flex justify-center items-center'>
                 <HandshakeIcon className="mr-2" /> Hire me
               </button>
             </div>
           </div>
 
-          <div id="academic" ref={academicRef}>
+          <div className='' id="academic" ref={academicRef}>
             <AcademicSection />
           </div>
-          <div id="experience" ref={experienceRef}>
+          <div className='' id="experience" ref={experienceRef}>
             <Experience />
           </div>
 
-          <div id="skill" ref={skillRef}>
+          <div className='' id="skill" ref={skillRef}>
             <Skill />
           </div>
 
-          <div id="certification" ref={certificationRef}>
+          <div className='' id="certification" ref={certificationRef}>
             <Certification />
           </div>
 
